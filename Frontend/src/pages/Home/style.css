@@ -81,7 +81,8 @@ form {
 /* Estilos para dispositivos móveis (máximo de 600px) */
 @media (max-width: 600px) {
   body {
-    font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+    font-size: 14px;
+    /* Reduz o tamanho da fonte em telas pequenas */
     margin: 0;
     padding: 0;
   }
@@ -90,32 +91,52 @@ form {
     flex-direction: column;
     align-items: center;
     padding: 5px;
-    margin-top: 150px; /* Adiciona espaço acima do container */
-    width: 100%; /* Aumenta a largura do container para 100% em telas menores */
+    margin-top: 150px;
+    /* Adiciona espaço acima do container */
+    width: 100%;
+    /* Aumenta a largura do container para 100% em telas menores */
   }
 
   form {
-    width: 80%; /* Aumenta a largura do formulário para 90% em telas menores */
-    max-width: 100%; /* Garante que o formulário não ultrapasse 500px */
+    width: 80%;
+    /* Aumenta a largura do formulário para 90% em telas menores */
+    max-width: 100%;
+    /* Garante que o formulário não ultrapasse 500px */
   }
 
   .card {
-    width: 100%; /* As cards ocupam toda a largura disponível */
+    width: 80%;
+    /* As cards ocupam toda a largura disponível */
     margin-bottom: 15px;
   }
 
-  input, button {
+  .card button {
+    padding: 20px; /* Reduz o espaço ao redor do ícone */
+    width: auto;  /* Garante que o botão não ocupe toda a largura */
+    height: auto; /* Garante que a altura seja ajustada ao conteúdo */
+  }
+
+  .card button img {
+    width: 16px;  /* Mantém o ícone pequeno */
+    height: 16px;
+  }
+
+  input,
+  button {
     width: 100%;
     padding: 12px;
     font-size: 16px;
   }
 
   h1 {
-    font-size: 1.5rem; /* Diminui o tamanho da fonte do título */
+    font-size: 1.5rem;
+    /* Diminui o tamanho da fonte do título */
   }
 
   img {
-    max-width: 100%; /* As imagens ficam responsivas */
+    max-width: 100%;
+    /* As imagens ficam responsivas */
     height: auto;
   }
+
 }

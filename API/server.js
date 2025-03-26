@@ -6,7 +6,10 @@ const prisma = new PrismaClient();  // Inicializa o Prisma Client
 
 const app = express();  // Cria uma instância do Express
 app.use(express.json());  // Configura o middleware para tratar JSON no corpo da requisição
-app.use(cors());  // Configura o middleware para permitir requisições de origens diferentes
+app.use(cors({
+    origin: '*',  // Permite requisições de qualquer origem
+    methods: 'GET,POST,PUT,DELETE', // Permite os métodos desejados
+  }));
 
 // Rota para criar um novo usuário
 app.post('/users', async (req, res) => {
@@ -87,6 +90,7 @@ app.delete('/users/:id', async (req, res) => {
 });
 
 // Inicia o servidor na porta 3333
-app.listen(3333, () => {
+app.listen(3333, '0.0.0.0', () => {
     console.log('Server is running on http://localhost:3333');
 });
+
