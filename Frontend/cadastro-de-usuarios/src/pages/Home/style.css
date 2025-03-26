@@ -78,3 +78,45 @@ form {
   }
 }
 
+/* Estilos para dispositivos móveis (máximo de 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px; /* Reduz o tamanho da fonte em telas pequenas */
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+    margin-top: 150px; /* Adiciona espaço acima do container */
+    width: 100%; /* Aumenta a largura do container para 100% em telas menores */
+  }
+
+  form {
+    width: 90%; /* Aumenta a largura do formulário para 90% em telas menores */
+    max-width: 500px; /* Garante que o formulário não ultrapasse 500px */
+    margin-bottom: 20px;
+  }
+
+  .card {
+    width: 100%; /* As cards ocupam toda a largura disponível */
+    margin-bottom: 15px;
+  }
+
+  input, button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 1.5rem; /* Diminui o tamanho da fonte do título */
+  }
+
+  img {
+    max-width: 100%; /* As imagens ficam responsivas */
+    height: auto;
+  }
+}
