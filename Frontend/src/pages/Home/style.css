@@ -95,9 +95,8 @@ form {
   }
 
   form {
-    width: 90%; /* Aumenta a largura do formulário para 90% em telas menores */
-    max-width: 500px; /* Garante que o formulário não ultrapasse 500px */
-    margin-bottom: 20px;
+    width: 80%; /* Aumenta a largura do formulário para 90% em telas menores */
+    max-width: 100%; /* Garante que o formulário não ultrapasse 500px */
   }
 
   .card {
