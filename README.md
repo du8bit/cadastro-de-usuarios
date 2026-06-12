@@ -1,4 +1,4 @@
-# user-registry
+# Registro de Usuários
 
 Sistema de gerenciamento de usuários com React, Vite e Node.js. Cadastre, liste e exclua usuários via API.
 
