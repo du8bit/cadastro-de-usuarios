@@ -7,7 +7,7 @@ Sistema de gerenciamento de usuários com React, Vite e Node.js. Cadastre, liste
 **Requisitos:** Node.js v16+, MongoDB
 
 ```bash
-git clone https://github.com/Akynovia/user-registry.git
+git clone https://github.com/Akynovia/cadastro-de-usuarios.git
 
 cd API && npm install && cp .env.example .env && npm start
 cd Frontend && npm install && npm run dev
