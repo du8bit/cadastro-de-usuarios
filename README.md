@@ -1,77 +1,34 @@
+# Registro de Usuário
 
-# 📝 Cadastro de Usuários
+Sistema de cadastro de usuários com React + Vite no frontend e Node.js + Express no backend, usando MongoDB.
 
-**React**  
-**Vite**  
-**Node.js**  
-**MongoDB**
+## Stack
 
-Um sistema de cadastro de usuários com frontend moderno em React + Vite e backend eficiente em Node.js + Express, utilizando MongoDB para armazenamento de dados.
+**Frontend** - React, Vite, Axios, ESLint  
+**Backend** - Node.js, Express, MongoDB, Mongoose
 
-## 🔥 Funcionalidades Principais
+## Funcionalidades
 
-- ✨ Interface moderna e responsiva
-- 📝 Cadastro de usuários com validação
-- 📋 Listagem paginada de usuários
-- 🔍 Busca e filtragem de registros
-- 🗑️ Exclusão segura de usuários
-- 🔄 Atualização em tempo real
+- Cadastro com validação
+- Listagem paginada
+- Busca e filtragem
+- Exclusão e atualização em tempo real
 
-## 🛠 Stack Tecnológica
+## Executando
 
-### Frontend
+**Pré-requisitos:** Node.js v16+, npm, MongoDB
 
-| Tecnologia | Descrição                           |
-|------------|-------------------------------------|
-| React      | Biblioteca para construção de UI    |
-| Vite       | Build tool ultrarrápida             |
-| Axios      | Cliente HTTP para APIs              |
-| ESLint     | Padronização de código              |
+```bash
+# Clone
+git clone https://github.com/Akynovia/user-registry.git
+cd user-registry
 
-### Backend
+# Backend
+cd API && npm install && cp .env.example .env && npm start
 
-| Tecnologia | Descrição                           |
-|------------|-------------------------------------|
-| Node.js    | Runtime JavaScript                  |
-| Express    | Framework web minimalista           |
-| MongoDB    | Banco de dados NoSQL                |
-| Mongoose   | ODM para MongoDB                    |
+# Frontend (novo terminal)
+cd Frontend && npm install && npm run dev
+```
 
-## 🚀 Como Executar
-
-### Pré-requisitos
-
-- Node.js v16+
-- npm ou yarn
-- MongoDB (local ou Atlas)
-
-### Passo a Passo
-
-1. Clone o repositório:
-
-   ```bash
-   git clone https://github.com/Akynovia/user-registry.git
-   cd user-registry
-   ```
-
-2. Configure o backend:
-
-   ```bash
-   cd API
-   npm install
-   cp .env.example .env  # Configure suas variáveis
-   npm start
-   ```
-
-3. Configure o frontend:
-
-   ```bash
-   cd ../Frontend
-   npm install
-   npm run dev
-   ```
-
-4. Acesse a aplicação:
-   
-   - **Frontend:** [http://localhost:5173](http://localhost:5173)
-   - **API:** [http://localhost:3333](http://localhost:3333)
+- Frontend: http://localhost:5173  
+- API: http://localhost:3333
